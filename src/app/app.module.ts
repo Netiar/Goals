@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import { GoalDetailComponent } from './goal-detail/goal-detail.component';
     BrowserModule,
     AppRoutingModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
