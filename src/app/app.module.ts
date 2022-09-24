@@ -11,6 +11,14 @@ import { StrikethroughDirective } from './strikethrough.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { GoalFormComponent } from './goal-form/goal-form.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxSpinnerModule } from 'ngx-spinner';
+
+
+
+// import { NgProgressModule } from '@ngx-progressbar/core';
+// import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +31,13 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    FormsModule,    
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxSpinnerModule,
+    // NgProgressModule.forRoot(),
+    // NgProgressHttpClientModule
+   
 
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
