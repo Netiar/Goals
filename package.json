@@ -21,9 +21,11 @@
     "@ngx-progressbar/core": "^3.0.2",
     "@ngx-progressbar/http-client": "^3.0.2",
     "bootstrap": "^5.2.0",
+    "ngx-spinner": "^14.0.0",
     "popper": "^1.0.1",
     "rxjs": "~7.5.0",
     "rxjs-compat": "^6.6.7",
+    "simple-ng-loader": "^2.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
