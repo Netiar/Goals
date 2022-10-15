@@ -63,7 +63,7 @@ export class GoalComponent implements OnInit {
 
     this.isLoading = true;
 
-    this.quoteService.quoteRequest()
+    // this.quoteService.quoteRequest()
     this.quote = this.quoteService.quote
 
     this.http.get<ApiResponse>("http://quotes.stormconsultancy.co.uk/random.json").subscribe(data=>{

@@ -22,8 +22,8 @@ export class QuoteRequestService {
      }
      let promise = new Promise<void>((resolve,reject)=>{
        this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response=>{
-        //  this.quote.quote = ""
-        //  this.quote.author = ""
+         this.quote.quote = response!.quote
+         this.quote.author = response!.author
 
          resolve()
        },
